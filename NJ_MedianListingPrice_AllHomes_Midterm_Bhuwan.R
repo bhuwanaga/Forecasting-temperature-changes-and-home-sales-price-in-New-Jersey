@@ -1,6 +1,6 @@
 library(readr)
 
-NJ_MedianListingPrice_AllHomes <- read_csv("C:/Users/bhuwa/Desktop/Courses Fall 2017/Business Forecasting/Midterm Submission/NJ_MedianListingPrice_AllHomes.csv")
+NJ_MedianListingPrice_AllHomes <- read_csv("*************.csv")
 
 NJ_Home_Raw <- NJ_MedianListingPrice_AllHomes$Value
 
@@ -33,7 +33,7 @@ plot(NJ_Home_TS)
 lines(temp, col="Red")
 ?lines
 
-#Naïve Method
+#NaÃ¯ve Method
 ?naive
 naive_forecast <- naive(NJ_Home_TS,5)
 plot(naive_forecast)
