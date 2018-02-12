@@ -1,6 +1,6 @@
 library(readr)
 
-newark_atmp <- read_csv("C:/Users/bhuwa/Desktop/Courses Fall 2017/Business Forecasting/Final Exam Submission/newark_atmp.csv")
+newark_atmp <- read_csv("******************.csv")
 #Plot and Inference
 temp_ts <- ts(newark_atmp$AvgTemp,start = c(2010,4),frequency = 12)
 plot(temp_ts)
@@ -33,7 +33,7 @@ lines(temp, col="Red")
 ?lines
 
 
-#Naïve Method
+#NaÃ¯ve Method
 ?naive
 naive_forecast <- naive(temp_ts,5)
 plot(naive_forecast)
